@@ -75,4 +75,48 @@ public class MotorPHPayrollSystem {
                         System.out.println("Pag-IBIG: " + data[10]);
                         System.out.println("Tax: " + data[11]);
 
-                    
+           
+                                double deductions = Double.parseDouble(data[8])
+                                        + Double.parseDouble(data[9])
+                                        + Double.parseDouble(data[10])
+                                        + Double.parseDouble(data[11]);
+
+                                System.out.println("Total Deductions: " + deductions);
+
+                                double net = Double.parseDouble(data[7]) - deductions;
+
+                                System.out.println("Net Salary: " + net);
+                            }
+                        }
+
+                        if(found == false){
+                            System.out.println("Employee number does not exist.");
+                        }
+
+                        fileReader.close();
+
+                    }catch(FileNotFoundException e){
+                        System.out.println("File not found.");
+                    }
+
+                }else{
+                    System.out.println("Program terminated.");
+                }
+
+            }
+
+            if(username.equals("payroll_staff")){
+
+                System.out.println("1. Process Payroll");
+                System.out.println("2. Exit");
+
+                int option = input.nextInt();
+
+                if(option == 1){
+
+                    System.out.println("1. One Employee");
+                    System.out.println("2. All Employees");
+                    System.out.println("3. Exit");
+
+                    int subOption = input.nextInt();
+         
