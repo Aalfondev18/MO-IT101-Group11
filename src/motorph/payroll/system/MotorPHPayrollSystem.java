@@ -15,7 +15,8 @@ public class MotorPHPayrollSystem {
      */
     public static void main(String[] args) {
       // Test   
-        
+      int age = 16;
+      System.out.println("You are" + age);
     }
     
 }
