@@ -1,5 +1,8 @@
 Team Details
--If possible, list the contribution of each member. This will help us check the contribution of every team member.
+Alexander William Alfon
+Waynard Tan
+Maye Belle Viado
+
 
 Program Details
 This is a role-based payroll system designed to manage employee profiles and compensation. Payroll staff have full administrative visibility into all employee records and salary data, while standard employees can access a self-service portal to view their own basic information.
